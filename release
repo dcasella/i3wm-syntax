@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+set -o errexit  # exit script when a command fails
+set -o pipefail # non-zero exit codes propagate to the end of a pipeline
+
+verlte() {
+	printf '%s\n%s' "${1:?}" "${2:?}" \
+		| sort --check=quiet --version-sort
+}
+
+current_version="$(jq -r '.version' package.json)"
+
+echo "Current version: ${current_version}"
+read -rp 'New version: ' new_version
+
+if ! verlte "${current_version}" "${new_version}"; then
+	echo "Version ${new_version} is older than ${current_version}" >&2
+	exit 1
+fi
+
+if [ -n "$(git status --porcelain)" ]; then
+	echo 'Git working directory not clean' >&2
+	exit 1
+fi
+
+# publish to the Visual Studio Code Marketplace
+vsce publish "${new_version}"
+git push
