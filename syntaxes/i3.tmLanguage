@@ -2282,9 +2282,9 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>border</string>
+        <string>border_style</string>
         <key>match</key>
-        <string>(border)\s*(none|toggle|(\d+)\s*pixel|(?:pixel|normal)\s*(\d+))</string>
+        <string>(border)\s*(none|normal(\s*\d+)?|toggle(\s*\d+)?|pixel(\s*\d+)?)</string>
         <key>captures</key>
         <dict>
           <key>1</key>
@@ -2298,6 +2298,16 @@
             <string>constant.language.i3</string>
           </dict>
           <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>constant.numeric.i3</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>constant.numeric.i3</string>
+          </dict>
+          <key>5</key>
           <dict>
             <key>name</key>
             <string>constant.numeric.i3</string>
