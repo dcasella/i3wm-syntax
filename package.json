@@ -2,7 +2,7 @@
     "name": "i3",
     "displayName": "i3",
     "description": "Syntax definition for the i3wm configuration file",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "dcasella",
     "engines": {
         "vscode": "^1.19.0"
