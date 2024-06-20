@@ -2284,7 +2284,7 @@
         <key>name</key>
         <string>border_style</string>
         <key>match</key>
-        <string>(border)\s*(none|normal(\s*\d+)?|toggle(\s*\d+)?|pixel(\s*\d+)?)</string>
+        <string>(border)\s*(none|1pixel|normal(\s*\d+)?|toggle(\s*\d+)?|pixel(\s*\d+)?)</string>
         <key>captures</key>
         <dict>
           <key>1</key>
