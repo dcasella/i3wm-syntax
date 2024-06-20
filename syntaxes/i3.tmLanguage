@@ -418,7 +418,7 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>for_window</string>
+        <string>for_window_with_1_criteria</string>
         <key>match</key>
         <string>(for_window)\s*\[(\w+)=(\&quot;.*\&quot;)\]\s*</string>
         <key>captures</key>
