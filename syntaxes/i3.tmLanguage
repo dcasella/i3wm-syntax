@@ -2673,6 +2673,25 @@
           </dict>
         </dict>
       </dict>
+      <dict>
+        <key>name</key>
+        <string>title_format</string>
+        <key>match</key>
+        <string>(title_format)\s*(\&quot;.*\&quot;)</string>
+        <key>captures</key>
+        <dict>
+          <key>1</key>
+          <dict>
+            <key>name</key>
+            <string>keyword.control.i3</string>
+          </dict>
+          <key>2</key>
+          <dict>
+            <key>name</key>
+            <string>string.i3</string>
+          </dict>
+        </dict>
+      </dict>
     </array>
   </dict>
 </plist>
