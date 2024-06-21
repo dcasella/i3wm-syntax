@@ -420,7 +420,7 @@
         <key>name</key>
         <string>for_window_with_1_criteria</string>
         <key>match</key>
-        <string>(for_window)\s*\[(\w+)(=(\&quot;.*\&quot;))?\]\s*</string>
+        <string>(for_window)\s*\[(\w+)(?:\=(\&quot;.*\&quot;))?\]\s*</string>
         <key>captures</key>
         <dict>
           <key>1</key>
@@ -433,7 +433,7 @@
             <key>name</key>
             <string>constant.language.i3</string>
           </dict>
-          <key>4</key>
+          <key>3</key>
           <dict>
             <key>name</key>
             <string>string.i3</string>
