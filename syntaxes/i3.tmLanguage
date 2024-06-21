@@ -2345,7 +2345,7 @@
         <key>name</key>
         <string>resize_mode_default</string>
         <key>match</key>
-        <string>(mode)\s*(\&quot;default\&quot;)</string>
+        <string>(mode)\s*(\&quot;default\&quot;|default)</string>
         <key>captures</key>
         <dict>
           <key>1</key>
@@ -2356,7 +2356,7 @@
           <key>2</key>
           <dict>
             <key>name</key>
-            <string>string.i3</string>
+            <string>constant.language.i3</string>
           </dict>
         </dict>
       </dict>
