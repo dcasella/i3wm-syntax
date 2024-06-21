@@ -19,25 +19,6 @@
     <array>
       <dict>
         <key>name</key>
-        <string>mode_variable_name</string>
-        <key>match</key>
-        <string>(mode)\s+(\$?\w*)</string>
-        <key>captures</key>
-        <dict>
-          <key>1</key>
-          <dict>
-            <key>name</key>
-            <string>keyword.control.i3</string>
-          </dict>
-          <key>2</key>
-          <dict>
-            <key>name</key>
-            <string>variable.other.i3</string>
-          </dict>
-        </dict>
-      </dict>
-      <dict>
-        <key>name</key>
         <string>criteria</string>
         <key>match</key>
         <string>\[(\w+)=(\&quot;.*\&quot;)\]</string>
@@ -2721,6 +2702,25 @@
         <string>include</string>
         <key>match</key>
         <string>(include)\s*(.*)</string>
+        <key>captures</key>
+        <dict>
+          <key>1</key>
+          <dict>
+            <key>name</key>
+            <string>keyword.control.i3</string>
+          </dict>
+          <key>2</key>
+          <dict>
+            <key>name</key>
+            <string>variable.other.i3</string>
+          </dict>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>mode_variable_name</string>
+        <key>match</key>
+        <string>(mode)\s+(\$?\w*)</string>
         <key>captures</key>
         <dict>
           <key>1</key>
