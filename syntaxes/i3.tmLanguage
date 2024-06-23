@@ -491,9 +491,9 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>set1</string>
+        <string>set_dollar_variable</string>
         <key>match</key>
-        <string>(set)\s*(\$\w*)\s*(\w*)</string>
+        <string>(set)\s*(\$\w+)\s*(?:((?:\#\w{6}(?:\w{2})?)|(?:\w+$))|(\&quot;.*\&quot;)|(.*))</string>
         <key>captures</key>
         <dict>
           <key>1</key>
@@ -511,29 +511,15 @@
             <key>name</key>
             <string>constant.language.i3</string>
           </dict>
-        </dict>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>set2</string>
-        <key>match</key>
-        <string>(set)\s*(\$\w*)\s*(#\w{6})</string>
-        <key>captures</key>
-        <dict>
-          <key>1</key>
+          <key>4</key>
           <dict>
             <key>name</key>
-            <string>keyword.control.i3</string>
+            <string>string.i3</string>
           </dict>
-          <key>2</key>
+          <key>5</key>
           <dict>
             <key>name</key>
             <string>variable.other.i3</string>
-          </dict>
-          <key>3</key>
-          <dict>
-            <key>name</key>
-            <string>constant.other.i3</string>
           </dict>
         </dict>
       </dict>
