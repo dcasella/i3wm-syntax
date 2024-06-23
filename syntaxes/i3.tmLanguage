@@ -2222,30 +2222,6 @@
           </dict>
         </dict>
       </dict>
-      <dict>
-        <key>name</key>
-        <string>bar_mode</string>
-        <key>match</key>
-        <string>((?:bar\s*)?mode)\s*(dock|hide|invisible|toggle)\s*(.*)?</string>
-        <key>captures</key>
-        <dict>
-          <key>1</key>
-          <dict>
-            <key>name</key>
-            <string>keyword.control.i3</string>
-          </dict>
-          <key>2</key>
-          <dict>
-            <key>name</key>
-            <string>constant.language.i3</string>
-          </dict>
-          <key>3</key>
-          <dict>
-            <key>name</key>
-            <string>constant.language.i3</string>
-          </dict>
-        </dict>
-      </dict>
       <!-- gaps inner <px>
            gaps outer <px> -->
       <dict>
@@ -2356,6 +2332,30 @@
           <dict>
             <key>name</key>
             <string>variable.other.i3</string>
+          </dict>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>bar_mode</string>
+        <key>match</key>
+        <string>((?:bar\s*)?mode)\s*(dock|hide|invisible|toggle)\s*(.*)?</string>
+        <key>captures</key>
+        <dict>
+          <key>1</key>
+          <dict>
+            <key>name</key>
+            <string>keyword.control.i3</string>
+          </dict>
+          <key>2</key>
+          <dict>
+            <key>name</key>
+            <string>constant.language.i3</string>
+          </dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>constant.language.i3</string>
           </dict>
         </dict>
       </dict>
