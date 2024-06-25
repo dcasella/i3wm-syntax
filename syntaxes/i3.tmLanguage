@@ -1886,7 +1886,7 @@
         <key>name</key>
         <string>resize</string>
         <key>match</key>
-        <string>(resize)\s*(grow|shrink)\s*(width|height)\s*(\d*)\s*(px)\s*(or)\s*(\d*)\s*(ppt)</string>
+        <string>(resize)\s*(grow|shrink)\s*(width|height|up|down|right|left)\s*(?:(\d+)\s*(?:(px)?\s*(?:(or)\s*(\d+)\s*(ppt)?)?)?)?</string>
         <key>captures</key>
         <dict>
           <key>1</key>
