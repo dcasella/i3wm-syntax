@@ -1536,7 +1536,7 @@
         <key>name</key>
         <string>sticky</string>
         <key>match</key>
-        <string>(sticky)\s*(enable)</string>
+        <string>(sticky)\s*(enable|disable|toggle)</string>
         <key>captures</key>
         <dict>
           <key>1</key>
