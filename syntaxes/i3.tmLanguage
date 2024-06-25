@@ -2383,6 +2383,20 @@
           </dict>
         </dict>
       </dict>
+      <dict>
+        <key>name</key>
+        <string>kill</string>
+        <key>match</key>
+        <string>(kill)</string>
+        <key>captures</key>
+        <dict>
+          <key>1</key>
+          <dict>
+            <key>name</key>
+            <string>keyword.control.i3</string>
+          </dict>
+        </dict>
+      </dict>
     </array>
   </dict>
 </plist>
