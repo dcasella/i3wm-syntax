@@ -1398,7 +1398,7 @@
         <key>name</key>
         <string>bindsym</string>
         <key>match</key>
-        <string>(bindsym)\s*(--release)?\s*([$\w\+]*)</string>
+        <string>(bindsym)\s*((?:\-\-[\-\w]+\s*)+)?\s*([$\w\+]*)</string>
         <key>captures</key>
         <dict>
           <key>1</key>
